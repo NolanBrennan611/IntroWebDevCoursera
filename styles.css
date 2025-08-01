@@ -1,0 +1,366 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+/* Header Styling */
+header {
+    background: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    border-bottom: 4px solid #005fa3;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Nav Bar Styling */
+nav[role="navigation"] {
+    background: #005fa3;
+    padding: 0.5rem 0;
+}
+nav[role="navigation"] ul {
+    display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav[role="navigation"] li {
+    margin: 0;
+}
+nav[role="navigation"] a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+}
+nav[role="navigation"] a:hover,
+nav[role="navigation"] a:focus {
+    background: #003e6b;
+    outline: none;
+}
+
+/* About Me Section */
+#about-me {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    margin: 2rem auto 1rem auto;
+    max-width: 700px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Projects Section - Card Layout */
+#projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+#projects article {
+    background: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+#projects figure {
+    margin: 0;
+    text-align: center;
+}
+#projects img {
+    max-width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Skills Title Styling */
+#skills-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Center Skills List */
+#skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+}
+
+/* Skills List with Icons */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+#skills li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+#skills li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    color: #0078d4;
+}
+
+/* Contact Form */
+#contact {
+    background: #fff;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+#contact-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+#contact-form input[type="email"],
+#contact-form input[name="name"],
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+}
+#contact-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+#contact-form button {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+}
+#contact-form button:hover,
+#contact-form button:focus {
+    background: #0056a3;
+    outline: none;
+}
+
+/* Footer Styling */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-top: 2rem;
+}
+
+/* Make images and videos responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hamburger menu button - improved 3-line styling and positioning */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0;
+}
+.hamburger span {
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+.hamburger span::before,
+.hamburger span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.hamburger span::before {
+    top: -9px;
+}
+.hamburger span::after {
+    top: 9px;
+}
+
+nav[role="navigation"] {
+    position: relative;
+}
+
+.project-filters button {
+    background: #fff;
+    border: 2px solid #0078d4;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.3rem 0.5rem 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s, border-color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s, border-color 0.2s;
+    outline: none;
+}
+
+.project-filters button:hover,
+.project-filters button:focus {
+    background: #0078d4;
+    color: #fff;
+    border-color: #005fa3;
+}
+
+/* Responsive layout for screens 768px and below */
+@media (max-width: 768px) {
+    #about-me,
+    #projects article,
+    #contact {
+        max-width: 95%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    #projects {
+        gap: 1rem;
+        margin: 1rem auto;
+        max-width: 100%;
+    }
+
+    #skills ul {
+        max-width: 95%;
+        margin: 1rem auto;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    nav[role="navigation"] {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 56px; /* Ensures nav bar is tall enough for hamburger */
+        background: #005fa3;
+        padding: 0 1rem;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+    }
+    nav[role="navigation"] ul {
+        display: none;
+        flex-direction: column;
+        background: #005fa3;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+    nav[role="navigation"].open ul {
+        display: flex;
+    }
+}

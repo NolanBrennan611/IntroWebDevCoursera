@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jane Doe | Full Stack Developer Portfolio</title>
+        <meta name="description" content="Portfolio of Jane Doe, a full stack developer specializing in JavaScript, Node.js, and modern web technologies. View projects, skills, and contact information.">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Jane Doe</h1>
+            <p>Full Stack Developer</p>
+        </header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <button class="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+            </button>
+            <ul id="main-nav">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>
+                    I am a passionate full stack developer with experience building web applications using JavaScript, Node.js, and MongoDB. I enjoy solving complex problems and creating user-friendly digital experiences.
+                </p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <!-- Filter Buttons -->
+                <div class="project-filters" style="text-align:center; margin-bottom:1.5rem;">
+                    <button type="button" onclick="filterProjects('all')">All</button>
+                    <button type="button" onclick="filterProjects('web')">Web Apps</button>
+                    <button type="button" onclick="filterProjects('mobile')">Mobile Apps</button>
+                    <button type="button" onclick="filterProjects('api')">APIs</button>
+                </div>
+                <article data-category="web">
+                    <h3>Task Tracker App</h3>
+                    <p>
+                        A web application for managing daily tasks with user authentication, real-time updates, and a responsive design.
+                    </p>
+                    <figure>
+                    <img src="images/task-tracker.png" alt="Screenshot of Task Tracker App showing the dashboard and task list.">
+                    <figcaption>Task Tracker App Dashboard</figcaption>
+                </figure>
+                </article>
+                <article data-category="mobile">
+                    <h3>Fitness Tracker Mobile</h3>
+                    <p>
+                        A mobile app for tracking workouts and health stats, built with React Native.
+                    </p>
+                    <figure>
+                        <img src="images/fitness-app.png" alt="Screenshot of Fitness Tracker Mobile app main screen.">
+                        <figcaption>Fitness Tracker Mobile App</figcaption>
+                    </figure>
+                </article>
+                <article data-category="api">
+                    <h3>Weather API</h3>
+                    <p>
+                        A RESTful API providing real-time weather data for any location, built with Node.js and Express.
+                    </p>
+                    <figure>
+                        <img src="images/weather-api.png" alt="Screenshot of Weather API documentation page.">
+                        <figcaption>Weather API Documentation</figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section id="skills">
+                <h2 id="skills-title">Skills</h2>
+                <ul id="skills-list">
+                    <li>JavaScript (ES6+)</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>React</li>
+                    <li>HTML5 &amp; CSS3</li>
+                    <li>Git &amp; GitHub</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form" aria-label="Contact Form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required >
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here..." required></textarea>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Subscribe to newsletter
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
